@@ -1,0 +1,656 @@
+/* start global rules */
+*{
+  -webkit-box-sizing : border-box;
+  -moz-box-sizing:border-box;
+  box-sizing: border-box;
+}
+
+ body {
+   font-family: 'Roboto' , sans-serif ;
+ }
+
+/* end global rules */
+
+
+/* علشان نوزع الميديا فى الكلاس دا*/
+
+/*start header*/
+
+.header{
+  background: url( '../image/sara.jpg' ) no-repeat top center ;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+  min-height: 500px;
+  position: relative ;
+
+}
+
+
+.header .overlay{
+
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  color: #fff;
+  background-color: rgba(76, 62, 158, 0.5);
+}
+
+
+ .header .overlay h1 {
+   font-size: 60px;
+   margin-top: 100px;
+ }
+
+.header .overlay .plan {
+   border: 4px solid #fff;
+   font-size: 24px;
+   width: 48%;
+   float: left;
+   padding: 20px;
+   margin-right: 1%;
+   margin-left: 1%;
+}
+
+
+.header .overlay .order {
+   border: 4px solid #fff;
+   font-size: 24px;
+   padding: 20px;
+   margin:30px  1% 0;
+
+}
+ /* علشان ف شاشة الموبايل اعمل تعديلات*/
+@media  (max-width :420px) { /* custom media not found on bootstrap*/
+  h1{
+    margin-top: 20px; !important
+    font-size: 40px; !important
+  }
+
+  .header .overlay .plan{
+
+  margin-bottom:20px;
+  margin : auto 20px;
+  font-size: 22px;
+}
+}
+
+
+@media  (max-width :767px) {
+
+  .header .overlay .plan{
+  float :none;
+  margin-bottom:20px;
+  margin : auto 20px;
+  font-size: 22px;
+}
+}
+/*end header*/
+
+/* start features*/
+
+.features {
+  padding: 30px ;
+}
+
+.features .h1 {
+   font-size:  50px;
+   color: #555;
+}
+
+.features .feat{
+  float: left;
+  /* هقسم 100% ع 3 علشان اخلى 3 عناصر جمب بعض*/
+
+  padding: 5px 2px 2;
+  margin-bottom: 40px ;
+  color: #555;
+}
+
+.features .feat p  {
+   line-height: 1.6 ;
+   margin: 5;
+
+  }
+
+  .features .feat h2  {
+     margin:  10px 0 5px ;
+    }
+
+/* end features*/
+
+/* star about-us*/
+
+  .about-us {
+    background-color: #c5c5dc;
+    padding: 5px 0  5;
+
+  }
+
+  .about-us .h1 {
+     font-size: 50px;
+     color: #72728c ;
+
+  }
+
+
+   .about-us .res-paragraph {
+
+       font-size: 22px ;
+   }
+/* end about-us*/
+
+/* start our works */
+ .color-first {
+   background-color: #dacaef;
+ }
+
+ .color-last {
+   background-color: #58FAAC ;
+ }
+
+@media (min-width: 1200px) {
+  .last-pic {
+  width: 1400px ;
+  height:200px ;
+
+} }
+
+@media (min-width: 1200px) {
+
+  .our-works .image {
+    float: left;
+    width: 25% ;
+    width: 350px;
+    height: 350px;
+  }
+}
+
+@media (min-width: 992px) {
+
+  .our-works .image {
+    height:350px;
+    width: 350px;
+     float: left;
+     width: 33.33333%
+  }
+}
+
+@media (max-width: 768px) {
+
+  .our-works .image {
+    height:350px;
+    width: 350px;
+    float: left;
+    width : 50%
+  }
+}
+
+@media (max-width: 767px) {
+
+  .our-works .image {
+    height:350px;
+    width: 350px;
+    float: left;
+    width : 100%
+  }
+}
+
+/* end our works */
+ /* start our pricing-table*/
+
+    .pricing-table {
+      background-color: #444;
+      color: #fff;
+      padding: 50px 0
+    }
+
+    .pricing-table .h1 {
+      margin: 0 0 30px;
+      font-size: 50px
+    }
+
+  .pricing-table .pricing-plan {
+    border: 3px solid #FFF;
+    padding: 20px 0 ;
+    /* علشان اقدر اتحكم ف المكان واوديه ف اى حته انا عاوزاها*/
+    position: relative;
+
+   }
+
+ .pricing-table .pricing-plan h3{
+
+    margin:  0 0 10px;
+    font-size: 26px;
+ }
+
+ .pricing-table .pricing-plan .pricing {
+   display: inline-block;
+   margin: 0 0 10px ;
+   font-size: 22px;
+   color: #bfbfbf
+ }
+
+ .pricing-table .pricing-plan ul{
+   line-height: 2 ;
+   font-size: 18px
+ }
+
+ @media (min-width: 768px) {
+   .pricing-table .pricing-plan {
+     width: 100%;
+     margin-bottom: 20px;
+   }
+ }
+
+ @media (max-width: 767px) {
+   .pricing-table .pricing-plan {
+     width: 100%;
+     margin-bottom: 20px;
+   }
+ }
+
+ @media (min-width: 929px) {
+
+   .pricing-table .pricing-plan:not(.ultimate) {
+      margin-right: 1%;
+      margin-bottom: 0;
+   }
+
+   .pricing-table .pricing-plan {
+     width: 32.6666%
+
+   }
+
+    .pricing-table .pricing-plan.plus {
+       left: 33.6666%
+
+    }
+
+     .pricing-table .pricing-plan.premiar{
+         right: 33.6666%;
+     }
+ }
+
+
+
+ /* end our pricing-table*/
+ /*start what they say */
+   .they-say {
+     padding: 50px 0
+
+   }
+   .they-say .h1 {
+     font-size: 50px;
+     margin: 0 0 20px;
+     color: #555;
+   }
+   .they-say  .person-say {
+     background-color: #EEE;
+     padding: 20px;
+     margin: 0 0 20px;
+     border: 1px solid #DDD ;
+     border-radius: 10px;
+
+   }
+
+   .they-say  .person-say  .avatar {
+      width: 120px;
+
+   }
+
+   .they-say  .person-say h3 {
+      margin: 0 0 10px;
+   }
+
+   .they-say  .person-say p {
+      margin: 0;
+      line-height: 1.7;
+      margin-left: 20px;
+      width: calc(100%.140%)
+
+   }
+
+   .they-say  .person-say  .avatar img{
+     width: 120px;
+     /* علشان صورة لما تخرج مقاسها م div تختفى */
+     /*overflow: hidden;*/
+   }
+
+
+
+
+
+   /* علشان برجراف يكون جمب صورة */
+    .they-say .person-say p{
+
+      width: calc(100%-220%);
+    }
+
+
+@media (min-width: 768px) and (max-width:991px) {
+  .they-say  .person-say:not(:first-of-type) .avatar{
+    float: none;
+    margin: auto;
+  }
+
+  .they-say  .person-say:not(:first-of-type) h3{
+      float: none;
+      text-align: center;
+
+  }
+  .they-say  .person-say:not(:first-of-type) p{
+    float: none;
+    width: 100%;
+    text-align: justify;
+  }
+}
+
+@media (max-width: 767px) {
+  .they-say  .person-say  .avatar{
+    float: none;
+    margin: auto;
+  }
+  .they-say  .person-say  h3{
+      float: none;
+      text-align: center;
+  }
+  .they-say  .person-say  p{
+    float: none;
+    width: 100%;
+    text-align: justify;
+  }
+}
+
+
+
+
+@media (min-width: 768px) {
+  .they-say  .person-say:first-of-type {
+    width: 100%;
+
+  }
+  .they-say  .person-say:not(:first-of-type) {
+    width: 49%;
+  }
+  .they-say  .person-say:last-of-type {
+    margin-left: 2%;
+  }
+
+}
+
+
+@media (min-width: 992px) {
+  .they-say  .person-say:first-of-type{
+    width: 80%;
+    margin-left: 10% ;
+  }
+}
+
+
+ /*end what they say*/
+
+ /* start information */
+
+   .information {
+     background-color: #c5c5dc;
+     padding: 5px 0  5;
+     font-size: 18px;
+
+
+   }
+
+   .information .h1 {
+      font-size: 50px;
+      color: #72728c ;
+
+   }
+  .information  .info-list li {
+     display: inline-block;
+     background-color: #DDD;
+     padding: 15px;
+     font-size: 22px;
+     cursor: pointer;
+
+  }
+
+  .information  .info-list li.selected {
+     background-color: #FFF;
+     color: green ;
+  }
+
+.information .info-cont {
+     margin-bottom: 50px;
+}
+
+
+.information .info-cont >  div{
+  padding: 20px;
+  background-color: #FFF;
+  line-height: 2
+}
+
+.information .info-cont > div:not(:first-of-type){
+   display: none;
+}
+
+ @media (max-width: 767px) {
+    .information  .info-list li {
+       display: block;
+
+    }
+ }
+/* end information */
+
+/*start footer */
+ .footer {
+   background-color: #333;
+   color: #EEE;
+ }
+
+ .footer .copy,
+  .footer .designe {
+     padding:  20px;
+     text-align: center;
+  }
+
+@media (max-width: 767px){
+  .footer .copy,
+   .footer .designe {
+     width: 100% ;
+   }
+}
+
+
+@media (min-width: 768px){
+  .footer .copy,
+   .footer .designe {
+     width: 50% ;
+   }
+}
+/* end footer */
+ /* علشان فى ميديا الموب يكون الكلام تحت بعض */
+ @media (max-width: 767px) {
+   .features .feat {
+   text-align: center;
+   color: blue;
+   }
+
+   .features .feat h2  {
+      color: green;
+     }
+
+     .features .feat p  {
+        color: red ;
+       }
+
+ }
+
+
+@media (min-width: 768px ){
+  .features .feat:first-of-type {
+      width: 100% ;
+ }
+ /* علشان اخلى اول عنصر ياخد عرض الصفحة كلها وباقى العناصر ياخدو عرض اقل*/
+ .features .feat not(:first-of-type) {
+     width: 50% ;
+}
+
+}
+@media (min-width: 992px) {
+   .features .feat {
+       width: 33.333333% ;
+      color: #1100ff ;
+  }
+
+  .features .feat h2  {
+     color: #1100ff;
+    }
+
+    .features .feat p  {
+       color:#2e2554 ;
+      }
+}
+
+ @media (max-width: 767px) { /*mob and tablet  rules*/
+
+ h1 {
+    margin-top: 40px !important
+ }
+  .visible-xs{
+     display: block  !important
+  }
+ .hidden-xs{
+   display: none !important
+ }
+
+ /* برجراف ف شاشات الموبايل هيكون ف النص ومقاسه صغير*/
+  .res-paragraph {
+     text-align:  center;
+     font-size: 20px !important
+  }
+ }
+
+
+ @media (min-width: 768px ) and (max-width: 991px)) { /*small screen rules*/
+
+   .container{
+     width: 750px;
+
+   }
+
+   .visible-sm{
+     display: block !important
+   }
+ }
+
+ @media (min-width: 992px) and (max-width: 1199px) { /*medium screen rules*/
+
+   .container {
+   width: 970px;
+
+ }
+
+ .visible-md{
+   display: block !important
+ }
+ }
+
+ @media (min-width: 1200px) { /*large screen rules*/
+
+  .container {
+   width: 1170px;
+ }
+ .visible-lg{
+   display: block !important
+ }
+ }
+
+
+
+ /*start framework */
+
+   .container{
+     /* auto علشان يكون فى النص*/
+     margin: auto;
+     padding-left: 15px;
+     padding-right: 15px;
+   }
+
+  .tex-center{
+  text-align: center;
+  }
+
+  .clearfix{
+    clear: both;
+  }
+  .visible-xs ;
+  .visible-sm ;
+  .visible-md ;
+  .visible-lg ;
+ /* اول ماهكون ف ميديا الموبايل بس هظهر العنصر اللى واخد الكلاس دل*/
+  .visible-xs{
+     display: none ;
+  }
+
+ .float-left{
+    float: left;
+ }
+
+
+ .float-right {
+   float: right;
+ }
+
+/* الكلاس دا بدى لاى h نفس حجم كلاس ال h1 */
+ .h1{
+   font-size: 2em;
+ }
+
+ .res-paragraph {
+   line-height: 1.8 ;
+  }
+
+/* الصورة اللى عاوزاها بنفس خواصها مش بخواص الميديا
+هديها الكلاس دا*/
+.reaponsive-img {
+
+  width: 100
+}
+ /* الكلاس دا هيلغى كل الاستايل للul علشان متتاثرش باى حاجة انا عاوزة اعملها */
+ .classic-list{
+   margin: 0 ;
+   padding: 0;
+   list-style: none;
+ }
+ .img-circl{
+   border-radius: 50%;
+ }
+
+
+ /* البرواز الابيض*/
+ .img-thumbnail {
+    padding: 3px;
+    background-color: #FFF;
+    border: 1px solid #ccc;
+ }
+  /*endframework */
+
+
+
+
+
+
+
+
+
+/* المشاكل اللى هتقابلنى */
+
+/*تحويل الموقع لعربى*/
+/*  float-left {
+ float right
+ direction rtl
+}
+*/
